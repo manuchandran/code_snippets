@@ -12,7 +12,13 @@ data(df_pop_zip)
 
 data(df_pop_zip)
 
-zip_choropleth(df_pop_zip,
-               state_zoom = "new york",
-               title      = "2012 New York State ZCTA Population Estimates",
-               legend     = "Population")
+plot.zip <- zip_choropleth(df_pop_zip,
+               state_zoom = "new jersey",
+               title      = "Data New Jersey State ZCTA Population Estimates",
+               legend     = "Population", 
+               num_colors = 10
+               )
+plot.zip + scale_fill_brewer(palette="Set1")
+plot.zip + scale_fill_brewer(palette="Greens")
+plot.zip + scale_fill_brewer(palette="Blues")
+plot.zip + scale_fill_brewer(palette="Reds")
