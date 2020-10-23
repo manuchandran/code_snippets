@@ -18,6 +18,7 @@ plot.zip <- zip_choropleth(df_pop_zip,
                legend     = "Population", 
                num_colors = 10
                )
+
 plot.zip + scale_fill_brewer(palette="Set1")
 plot.zip + scale_fill_brewer(palette="Greens")
 plot.zip + scale_fill_brewer(palette="Blues")
