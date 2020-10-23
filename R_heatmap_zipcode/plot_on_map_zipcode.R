@@ -3,6 +3,8 @@
 #library(devtools)
 #install_github('arilamstein/choroplethrZip')
 
+library(dplyr)
+
 library(choroplethrZip)
 
 library(choroplethr)
@@ -23,3 +25,10 @@ plot.zip + scale_fill_brewer(palette="Set1")
 plot.zip + scale_fill_brewer(palette="Greens")
 plot.zip + scale_fill_brewer(palette="Blues")
 plot.zip + scale_fill_brewer(palette="Reds")
+
+#out_filepath = "/DataSimulation/"
+#out_filename = "out_full_filename.csv"
+#out_full_filename = paste(out_filepath,ExperimentName,out_filename,sep = "")
+# Import the data and look at the first six rows
+#input_data <- read.csv(file = out_full_filename, header = TRUE )
+
